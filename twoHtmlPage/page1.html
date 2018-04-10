@@ -1,0 +1,134 @@
+<!DOCTYPE>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .header{
+    position : fixed;
+    display : block;
+    width : 100%;
+    height : 10%;
+    background-color: blue;
+  }
+
+  .logo{
+    height : 100%;
+    width : 20%
+
+  }
+
+  .homeButton, .contactButton, .search, .home{
+    position : absolute;
+    top :40%;
+    left : 25%;
+    color : orange;
+    text-decoration: none;
+  }
+
+  .homeButton:hover, .contactButton:hover{
+    color : white;
+    text-decoration: underline;
+  }
+
+  .contactButton{
+    left : 35%
+
+  }
+
+  .search{
+    left : 80%;
+    color : #999;
+  }
+
+  .home{
+    left : 90%;
+    color : #999;
+  }
+
+  .home:hover, .search:hover {
+    color : white;
+  }
+
+  .footer{
+    position : fixed;
+    display : block;
+    width : 100%;
+    height : 10%;
+    background-color: #2222;
+    bottom: 0%;
+    text-align: center;
+
+  }
+
+  .section{
+    position : absolute;
+    display : block;
+    border : 5px solid blue;
+    margin : 30% 20%;
+    height : 40%;
+    width : 60%;
+
+  }
+
+  .form{
+    positiom : relative;
+    margin : 10% 15%;
+
+  }
+
+  .name{
+    display : block;
+  }
+
+  </style>
+</head>
+<body>
+
+
+<header>
+
+
+<div class="header">
+  <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy1ek86-TCasJmmUeLmLBhmsRYR0tnbnT9SmDz00Gt-JmrRVDZ" alt="logo" title="Basavaraj"> </img>
+  <a class="homeButton"  href="#">Home</a>
+  <a class="contactButton"  href="#">Contact</a>
+  <i class="search fa fa-search"></i>
+  <i class="home fa fa-home"></i>
+
+</div>
+
+
+</header>
+
+
+<section>
+
+<div class="section">
+
+  <form class="form">
+    <p class="name">Name</p><input class="inputName" type="text" placeholder="Enter name..."  onClick="changeBackgroundColor()">
+  </form>
+
+
+</div>
+
+</section>
+
+
+<footer>
+  <div class="footer">
+    <p>Copyright 2018, Basavaraj TM</p>
+
+  </div>
+</footer>
+
+<script>
+function changeBackgroundColor(){
+  document.querySelector(".inputName").style.backgroundColor = "#7777";
+}
+</script>
+</body>
+</html>
